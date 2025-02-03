@@ -1,0 +1,10 @@
+def calcular_pi(n):
+    suma =  0
+    for k in range(1, n+1):
+        suma += ((-1)**(k+1)) / (2*k - 1)
+        return 4 * suma
+
+
+ n =200
+ pi = calcular_pi(n)  
+ print(f"Valor de pi calculado con n={n}: {pi}")     

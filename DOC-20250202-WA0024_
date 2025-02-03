@@ -1,0 +1,9 @@
+def calcular_letra_dni(dni):
+    letras = "TRWAGMYFPDXBNJZSQWVHLCKE"
+    return letras [dni % 23]
+
+
+    # Solicitar DNI al usuario
+    dni = int(input("Introduzca su numero de DNI(sin letra): "))
+    letra = calcular_letra_dni(dni)
+    print(f"La letra de tu DNI es: {letra}")
